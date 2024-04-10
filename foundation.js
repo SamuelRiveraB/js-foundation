@@ -22,7 +22,9 @@ function removeItemsFromList() {
   var item = list.pop();
 
   if (item) {
-    removeItemsFromList();
+    setTimeout(removeItemsFromList, 0);
+  } else {
+    console.log("End = " + list.length);
   }
 }
 
