@@ -28,7 +28,7 @@ function removeItemsFromList() {
   }
 }
 
-removeItemsFromList();
+// removeItemsFromList();
 
 // Hoisting
 
@@ -45,4 +45,16 @@ var sing2 = () => {
 // Function declaration
 function sing() {
   console.log("ohhh la la la");
+}
+
+// Hoisting with 2 declarations of the same function
+
+a();
+
+function a() {
+  console.log("Hi");
+}
+
+function a() {
+  console.log("Bye");
 }
