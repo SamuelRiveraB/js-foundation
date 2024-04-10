@@ -88,3 +88,19 @@ function marry2(...args) {
 
 marry("Tim", "Tina");
 marry2("Tim", "Tina");
+
+// this
+
+const obj = {
+  name: "Billy",
+  sing: function () {
+    console.log(this);
+    var self = this;
+    var anotherFunc = function () {
+      console.log(self);
+    };
+    anotherFunc();
+  },
+};
+
+obj.sing();
