@@ -144,3 +144,15 @@ let multiplyByTwo = multiply.bind(this, 2);
 console.log(multiplyByTwo(4));
 let multiplyByTen = multiply.bind(this, 10);
 console.log(multiplyByTen(4));
+
+// this exercise
+
+const character = {
+  name: "Simon",
+  getCharacter() {
+    return this.name;
+  },
+};
+const giveMeTheCharacterNOW = character.getCharacter.bind(character);
+
+console.log("?", giveMeTheCharacterNOW());
