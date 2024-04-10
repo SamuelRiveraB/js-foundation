@@ -121,5 +121,6 @@ const archer = {
 };
 
 console.log("1", archer);
-wizard.heal.apply(archer, [100, 30]);
+const healArcher = wizard.heal.bind(archer, 100, 30);
+healArcher();
 console.log("2", archer);
