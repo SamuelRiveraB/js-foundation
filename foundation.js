@@ -124,3 +124,12 @@ console.log("1", archer);
 const healArcher = wizard.heal.bind(archer, 100, 30);
 healArcher();
 console.log("2", archer);
+
+const array = [1, 2, 3];
+
+function getMaxNumber(arr) {
+  //   return Math.max(...arr);
+  return Math.max.apply(null, arr);
+}
+
+console.log(getMaxNumber(array));
