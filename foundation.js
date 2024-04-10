@@ -29,3 +29,20 @@ function removeItemsFromList() {
 }
 
 removeItemsFromList();
+
+// Hoisting
+
+console.log("1-------");
+console.log(teddy);
+console.log(sing2);
+var teddy = "bear";
+
+// Function expression
+var sing2 = () => {
+  console.log("uhhh la la la");
+};
+
+// Function declaration
+function sing() {
+  console.log("ohhh la la la");
+}
